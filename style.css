@@ -183,7 +183,7 @@ font-size:0.86rem;
     height: 100%;
 }
 
-.prime-image {
+  .prime-image {
     background-color: white;
     height:350px;
     width: 350px;
@@ -192,7 +192,6 @@ font-size:0.86rem;
     display: none;
     color: #000;
     margin-left: 10px;
-    transition: display 1s;
     padding: 10px;
 }
 
@@ -219,7 +218,6 @@ font-size:0.86rem;
 .image-item {
     min-width: 100%;
     height:500px;
-    /* transform: translateX(40%); */
     transition: transform 0.3s;
 
 }
@@ -257,31 +255,18 @@ font-size:0.86rem;
     box-shadow: -2px -2px 2px rgb(230, 227, 227),
         2px 2px 2px white;
     margin: 2px;
-}
-/* .container-1{
-    display:block;
-}
-h1{
-    display:block;
-    text-align:center;
-}
-.container-1 .big-box{
-    /* display:flex; */
-    /* height:250px; */
-    /* justify-content:space-evenly; */
-/* }
-.small-box{
-    float:right;
-    width:200px;
-    height:250px;
-}  */
+}  
+
 
 .shop-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: #868181;
+    animation-name: animation1;
+    
 }
+
 
 .box {
     height:380px;
@@ -303,6 +288,7 @@ h1{
     background-image: cover;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    background-size:cover;
 }
 
 .box-content {
@@ -383,26 +369,6 @@ h1{
 }
 
 
-
-
-
-
-
-
-
-
-
-/** hero Section */
-
- 
-/* .hero-section {
-     position: relative;  
- background-image: url("heroimage.jpg"); 
-    background-size: cover;
-    height:500px; 
-} */
-
-
 /** shop section **/
 
 .shop-section{
@@ -445,56 +411,7 @@ h1{
     font-size :20px;;
 }
 
-/* new section 5 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*scrollbar */
-
-/* .section-horizontal-scrollbar{
-    height:250px;
-    
-}
-
- .horizontal-scrollbar{
-    height:200px;
-    border:1px solid rgb(165, 87, 100);
-    display:flex;
-    overflow-x:scroll;
-    margin-top:12px;
-    background-color: #222f3d;
-}
-.horizontal-scrollbar::-webkit-scrollbar{
-    width:0;
-}
-.horizontal-scrollbar .item{
-    min-width:190px;
-    height:180px;
-    text-align:center;
-     margin-right:2px;  
-    background-color:#dbbebe;
-}  
-.item1{
-   height: 180px;;
-   width: 190px;
-}*/
 
 .New-section{
     display: flex;
@@ -673,7 +590,7 @@ ul a{
 
 @media only screen and (max-width: 480px) {
     .variety-section {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 
     .New-img {
